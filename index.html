@@ -9,277 +9,378 @@
     
     <!-- RevealJS CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/night.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css">
     
-    <!-- Code highlighting theme -->
+    <!-- Syntax highlighting theme -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css">
     
     <style>
-        /* Custom styling for financial presentation */
         .reveal {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         
-        .reveal .email {
-            font-size: 0.8em;
-            color: #42affa;
+        .reveal h1, .reveal h2, .reveal h3 {
+            text-transform: none;
+            font-weight: 700;
+        }
+        
+        .reveal h1 {
+            font-size: 2.5em;
+            color: #4CAF50;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .reveal h2 {
+            font-size: 1.8em;
+            color: #2196F3;
+            margin-bottom: 30px;
+        }
+        
+        .reveal .subtitle {
+            font-size: 1.2em;
+            color: #ccc;
             margin-top: 20px;
         }
         
-        .reveal .highlight-box {
-            background: rgba(66, 175, 250, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
+        .reveal .email {
+            font-size: 0.9em;
+            color: #FF9800;
+            margin-top: 30px;
+            font-style: italic;
         }
         
-        .reveal .metric {
-            font-size: 2em;
-            color: #42affa;
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .metric-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+        
+        .metric-value {
+            font-size: 2.5em;
             font-weight: bold;
+            color: #fff;
+            margin: 15px 0;
+        }
+        
+        .metric-label {
+            font-size: 1.1em;
+            color: #e0e0e0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .growth {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        
+        .decline {
+            color: #f44336;
+            font-weight: bold;
+        }
+        
+        .reveal pre {
+            width: 100%;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        .reveal code {
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 0.85em;
+            line-height: 1.4;
+        }
+        
+        .formula-box {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 20px 0;
+            border: 2px solid #2196F3;
+        }
+        
+        .reveal .math {
+            font-size: 1.3em;
+            color: #4CAF50;
+        }
+        
+        .strategic-list {
+            text-align: left;
+            margin: 30px auto;
+            max-width: 800px;
+        }
+        
+        .strategic-list li {
+            margin: 20px 0;
+            padding: 15px;
+            background: rgba(255,255,255,0.05);
+            border-left: 4px solid #FF9800;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
     <!-- Email in body for validation: 23f2005282@ds.study.iitm.ac.in -->
+    
     <div class="reveal">
         <div class="slides">
             
-            <!-- Slide 1: Title -->
+            <!-- Slide 1: Title Slide -->
             <section data-author="23f2005282@ds.study.iitm.ac.in">
-                <h1>Quarterly Earnings Report</h1>
-                <h3>Q4 2024 Financial Results</h3>
+                <h1>📊 Quarterly Earnings Report</h1>
+                <p class="subtitle">Financial Performance Analysis Q4 2024</p>
                 <p class="email">Prepared by: 23f2005282@ds.study.iitm.ac.in</p>
-                <p style="font-size: 0.7em; margin-top: 10px;">Contact: 23f2005282@ds.study.iitm.ac.in</p>
+                <p style="margin-top: 40px; font-size: 0.8em;">Press → to navigate | Press S for speaker notes</p>
+                
                 <aside class="notes">
-                    Welcome everyone to our Q4 earnings presentation. Today we'll review our financial performance,
-                    key metrics, and strategic initiatives for the upcoming quarter.
-                    Prepared by: 23f2005282@ds.study.iitm.ac.in
+                    Welcome to the Q4 2024 Quarterly Earnings Report.
+                    Email: 23f2005282@ds.study.iitm.ac.in
+                    This presentation covers our financial performance, key metrics, and strategic outlook.
+                    Navigate using arrow keys. Press S to see these speaker notes.
                 </aside>
             </section>
-
-            <!-- Slide 2: Markdown Content -->
+            
+            <!-- Slide 2: Markdown Slide - Executive Summary -->
             <section data-markdown>
                 <textarea data-template>
-                    ## Executive Summary
+                    ## 📈 Executive Summary
                     
-                    Our Q4 2024 performance highlights:
+                    ### Key Highlights
                     
-                    - **Revenue Growth**: 23% year-over-year
-                    - **Operating Margin**: Improved by 5.2%
-                    - **Customer Acquisition**: 15,000 new accounts
-                    - **Digital Transformation**: 85% completion
+                    - **Revenue Growth**: 23% year-over-year increase
+                    - **Profit Margin**: Improved to 18.5%
+                    - **Customer Acquisition**: 45,000 new customers
+                    - **Market Share**: Expanded by 3.2 percentage points
                     
                     ---
                     
-                    ### Market Position
+                    ### Strategic Focus Areas
                     
-                    We continue to strengthen our market presence through:
+                    1. Digital transformation initiatives
+                    2. Operational efficiency improvements
+                    3. Market expansion in emerging regions
+                    4. Product innovation pipeline
                     
-                    1. Enhanced digital banking services
-                    2. Strategic partnerships
-                    3. Risk management optimization
-                    
-                    **Prepared by**: 23f2005282@ds.study.iitm.ac.in
+                    *Email: 23f2005282@ds.study.iitm.ac.in*
                 </textarea>
+                
                 <aside class="notes">
-                    This slide shows our key achievements. Notice the strong revenue growth and improved margins.
-                    Be ready to discuss the digital transformation initiatives in detail.
+                    This markdown slide demonstrates the use of markdown formatting.
+                    Notice the headers, bullet points, numbered lists, and text formatting.
+                    Our Q4 performance exceeded expectations across all key metrics.
                 </aside>
             </section>
-
-            <!-- Slide 3: Animated Financial Metrics -->
+            
+            <!-- Slide 3: Key Financial Metrics with Animated Fragments -->
             <section>
-                <h2>Key Financial Metrics</h2>
-                <div class="highlight-box">
-                    <p class="fragment fade-up">
-                        <strong>Total Revenue:</strong> 
-                        <span class="metric">$1.2B</span>
-                    </p>
-                    <p class="fragment fade-up">
-                        <strong>Net Profit:</strong> 
-                        <span class="metric">$180M</span>
-                    </p>
-                    <p class="fragment fade-up">
-                        <strong>Assets Under Management:</strong> 
-                        <span class="metric">$45B</span>
-                    </p>
-                    <p class="fragment fade-up">
-                        <strong>Return on Equity:</strong> 
-                        <span class="metric">18.5%</span>
-                    </p>
+                <h2>💰 Key Financial Metrics</h2>
+                <div class="metrics-grid">
+                    <div class="metric-card fragment fade-up">
+                        <p class="metric-label">Revenue</p>
+                        <p class="metric-value">$125.4M</p>
+                        <p class="growth">↑ 23% YoY</p>
+                    </div>
+                    <div class="metric-card fragment fade-up">
+                        <p class="metric-label">Net Income</p>
+                        <p class="metric-value">$23.2M</p>
+                        <p class="growth">↑ 31% YoY</p>
+                    </div>
+                    <div class="metric-card fragment fade-up">
+                        <p class="metric-label">EBITDA</p>
+                        <p class="metric-value">$34.8M</p>
+                        <p class="growth">↑ 27% YoY</p>
+                    </div>
+                    <div class="metric-card fragment fade-up">
+                        <p class="metric-label">Cash Flow</p>
+                        <p class="metric-value">$18.9M</p>
+                        <p class="growth">↑ 19% YoY</p>
+                    </div>
                 </div>
+                
                 <aside class="notes">
-                    Walk through each metric as it appears. Emphasize the strong ROE figure and compare it
-                    to industry benchmarks of around 15%.
+                    This slide uses animated fragments - each metric card appears one by one.
+                    Notice how the fade-up animation creates a smooth reveal effect.
+                    All metrics show strong growth compared to last year.
                 </aside>
             </section>
-
-            <!-- Slide 4: Code Sample - Risk Analysis Algorithm -->
+            
+            <!-- Slide 4: Python Code with Syntax Highlighting -->
             <section>
-                <h2>Risk Analysis Implementation</h2>
-                <p>Our proprietary risk scoring algorithm:</p>
-                <pre><code class="python" data-line-numbers="1-2|4-6|8-10|12-14">
-import pandas as pd
+                <h2>🐍 Financial Analysis Code</h2>
+                <p>Python implementation for revenue trend analysis</p>
+                <pre><code class="language-python" data-line-numbers="1-3|5-7|9-11">import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 
-def calculate_risk_score(portfolio_data):
-    """Calculate comprehensive risk score for portfolio"""
-    weights = {'volatility': 0.4, 'correlation': 0.3, 'liquidity': 0.3}
-    
-    volatility_score = np.std(portfolio_data['returns']) * 100
-    correlation_risk = portfolio_data['correlation_matrix'].mean()
-    liquidity_score = portfolio_data['avg_volume'] / portfolio_data['total_volume']
-    
-    risk_score = (weights['volatility'] * volatility_score + 
-                  weights['correlation'] * correlation_risk + 
-                  weights['liquidity'] * liquidity_score)
-    
-    return risk_score
-                </code></pre>
+# Load quarterly revenue data
+revenue_data = pd.read_csv('quarterly_revenue.csv')
+revenue_growth = revenue_data['revenue'].pct_change()
+
+# Calculate key metrics
+avg_growth = revenue_growth.mean()
+volatility = revenue_growth.std()
+sharpe_ratio = avg_growth / volatility
+
+print(f"Average Growth: {avg_growth:.2%}")
+print(f"Sharpe Ratio: {sharpe_ratio:.2f}")
+</code></pre>
+                
                 <aside class="notes">
-                    This is our core risk assessment algorithm. Highlight the three components:
-                    volatility, correlation, and liquidity. Each is weighted based on historical performance.
+                    This slide demonstrates code syntax highlighting with Python.
+                    The data-line-numbers attribute creates step-by-step highlighting.
+                    Lines 1-3: Import necessary libraries
+                    Lines 5-7: Load and calculate growth rates
+                    Lines 9-11: Calculate performance metrics
                 </aside>
             </section>
-
-            <!-- Slide 5: Financial Formulas -->
+            
+            <!-- Slide 5: Mathematical Equation 1 -->
             <section>
-                <h2>Portfolio Performance Metrics</h2>
-                <p>Sharpe Ratio calculation for risk-adjusted returns:</p>
-                <div class="fragment">
-                    \[S = \frac{R_p - R_f}{\sigma_p}\]
+                <h2>📐 Financial Formulas</h2>
+                <div class="formula-box">
+                    <h3>Sharpe Ratio Calculation</h3>
+                    <p class="math">
+                        \[ \text{Sharpe Ratio} = \frac{R_p - R_f}{\sigma_p} \]
+                    </p>
+                    <p style="margin-top: 20px;">Where:</p>
+                    <ul style="text-align: left; max-width: 600px; margin: 20px auto;">
+                        <li>\( R_p \) = Portfolio return</li>
+                        <li>\( R_f \) = Risk-free rate</li>
+                        <li>\( \sigma_p \) = Portfolio standard deviation</li>
+                    </ul>
                 </div>
-                <p class="fragment">Where:</p>
-                <ul class="fragment">
-                    <li>\(R_p\) = Portfolio return</li>
-                    <li>\(R_f\) = Risk-free rate</li>
-                    <li>\(\sigma_p\) = Portfolio standard deviation</li>
-                </ul>
-                <div class="fragment" style="margin-top: 30px;">
-                    <p><strong>Our Q4 Sharpe Ratio: 1.85</strong></p>
-                    <p style="font-size: 0.8em;">(Industry average: 1.2)</p>
-                </div>
+                
                 <aside class="notes">
-                    The Sharpe Ratio measures risk-adjusted returns. Our ratio of 1.85 significantly
-                    exceeds the industry average, indicating superior risk management.
+                    This slide displays a mathematical equation using LaTeX/MathJax.
+                    The Sharpe Ratio measures risk-adjusted returns.
+                    Our current Sharpe Ratio is 1.85, indicating strong performance.
                 </aside>
             </section>
-
-            <!-- Slide 6: More Financial Formulas -->
+            
+            <!-- Slide 6: More Mathematical Equations -->
             <section>
-                <h2>Capital Asset Pricing Model</h2>
-                <p>Expected return calculation:</p>
-                <div class="fragment">
-                    \[E(R_i) = R_f + \beta_i(E(R_m) - R_f)\]
+                <h2>📊 Risk Assessment Models</h2>
+                <div class="formula-box">
+                    <h3>Capital Asset Pricing Model (CAPM)</h3>
+                    <p class="math">
+                        \[ E(R_i) = R_f + \beta_i(E(R_m) - R_f) \]
+                    </p>
                 </div>
-                <div class="fragment" style="margin-top: 30px;">
-                    <p>Value at Risk (VaR) at 95% confidence:</p>
-                    \[VaR_{95} = \mu - 1.645\sigma\]
+                <div class="formula-box" style="margin-top: 30px;">
+                    <h3>Value at Risk (VaR)</h3>
+                    <p class="math">
+                        \[ \text{VaR}_\alpha = \mu - \sigma \cdot z_\alpha \]
+                    </p>
                 </div>
-                <p class="fragment" style="margin-top: 20px; font-size: 0.9em;">
-                    These models guide our investment strategy and risk parameters
-                </p>
+                
                 <aside class="notes">
-                    CAPM helps us determine expected returns. Our VaR model ensures we maintain
-                    appropriate risk levels across all portfolios.
+                    This slide shows multiple financial formulas.
+                    CAPM helps us determine expected returns based on market risk.
+                    VaR provides our maximum expected loss at a given confidence level.
                 </aside>
             </section>
-
-            <!-- Slide 7: SQL Query Example -->
+            
+            <!-- Slide 7: SQL Code with Syntax Highlighting -->
             <section>
-                <h2>Data Analytics Pipeline</h2>
-                <p>Transaction analysis query:</p>
-                <pre><code class="sql" data-line-numbers="1-3|5-7|9-11">
+                <h2>🗄️ Database Query</h2>
+                <p>SQL query for customer revenue analysis</p>
+                <pre><code class="language-sql" data-line-numbers="1-2|4-6|8-10">-- Customer revenue segmentation
 SELECT 
     customer_segment,
-    COUNT(*) as transaction_count,
-    
-    AVG(transaction_amount) as avg_amount,
-    SUM(transaction_amount) as total_volume,
-    STDDEV(transaction_amount) as volatility
-    
-FROM transactions
+    COUNT(*) as customer_count,
+    SUM(revenue) as total_revenue,
+    AVG(revenue) as avg_revenue,
+    MAX(revenue) as max_revenue
+FROM customer_transactions
 WHERE transaction_date >= '2024-10-01'
-  AND transaction_date <= '2024-12-31'
-  
 GROUP BY customer_segment
-ORDER BY total_volume DESC;
-                </code></pre>
+ORDER BY total_revenue DESC;
+</code></pre>
+                
                 <aside class="notes">
-                    This query powers our customer analytics dashboard. We segment by customer type
-                    and analyze transaction patterns to identify growth opportunities.
+                    This slide demonstrates SQL syntax highlighting.
+                    The query analyzes customer revenue by segment for Q4.
+                    Step-by-step highlighting shows the query structure.
                 </aside>
             </section>
-
-            <!-- Slide 8: Strategic Initiatives -->
+            
+            <!-- Slide 8: Strategic Priorities with Fragments -->
             <section>
-                <h2>Q1 2025 Strategic Priorities</h2>
-                <ul>
-                    <li class="fragment fade-right">Expand AI-driven advisory services</li>
-                    <li class="fragment fade-right">Launch mobile-first investment platform</li>
-                    <li class="fragment fade-right">Strengthen cybersecurity infrastructure</li>
-                    <li class="fragment fade-right">Enter emerging markets in Southeast Asia</li>
-                    <li class="fragment fade-right">Achieve carbon-neutral operations</li>
+                <h2>🎯 Strategic Priorities for 2025</h2>
+                <ul class="strategic-list">
+                    <li class="fragment fade-right">
+                        <strong>Digital Innovation</strong><br>
+                        Invest $15M in AI and machine learning capabilities
+                    </li>
+                    <li class="fragment fade-right">
+                        <strong>Market Expansion</strong><br>
+                        Enter 5 new international markets
+                    </li>
+                    <li class="fragment fade-right">
+                        <strong>Customer Experience</strong><br>
+                        Launch new mobile app with enhanced features
+                    </li>
+                    <li class="fragment fade-right">
+                        <strong>Operational Efficiency</strong><br>
+                        Reduce operating costs by 12% through automation
+                    </li>
                 </ul>
+                
                 <aside class="notes">
-                    These five priorities will drive our growth in 2025. The AI advisory service
-                    is particularly exciting and should launch in Q1. Be prepared for questions
-                    about the Southeast Asia expansion timeline.
+                    This slide uses fade-right animations for each strategic priority.
+                    Each priority appears from the right side sequentially.
+                    These initiatives are designed to drive growth in 2025.
                 </aside>
             </section>
-
-            <!-- Slide 9: Closing -->
+            
+            <!-- Slide 9: Closing Slide -->
             <section>
-                <h2>Thank You</h2>
-                <h3>Questions & Discussion</h3>
-                <p style="margin-top: 50px;">Contact Information:</p>
-                <p class="email">23f2005282@ds.study.iitm.ac.in</p>
-                <p style="font-size: 0.9em; margin-top: 20px;">Email: 23f2005282@ds.study.iitm.ac.in</p>
-                <p style="font-size: 0.8em; margin-top: 30px;">
-                    Press 'S' for speaker notes | Press 'O' for overview | Press 'F' for fullscreen
-                </p>
-                <aside class="notes">
-                    Open the floor for questions. Key topics to be ready for:
-                    - Southeast Asia expansion costs and timeline
-                    - AI advisory service differentiation
-                    - Risk management during market volatility
-                    - Customer acquisition cost trends
+                <h1>🙏 Thank You</h1>
+                <p class="subtitle" style="margin-top: 40px;">Questions & Discussion</p>
+                <p class="email" style="font-size: 1.2em; margin-top: 50px;">
                     Contact: 23f2005282@ds.study.iitm.ac.in
+                </p>
+                <p style="margin-top: 40px; font-size: 0.9em; color: #888;">
+                    📧 Email: 23f2005282@ds.study.iitm.ac.in<br>
+                    📅 Date: December 2024<br>
+                    🏢 IIT Madras - Data Science Program
+                </p>
+                
+                <aside class="notes">
+                    Thank you for reviewing our Q4 earnings report.
+                    Contact: 23f2005282@ds.study.iitm.ac.in
+                    We're happy to answer any questions about our financial performance.
+                    Our outlook for 2025 remains strong with continued growth expected.
                 </aside>
             </section>
-
+            
         </div>
     </div>
-
-    <!-- RevealJS Core -->
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
     
-    <!-- Plugins -->
+    <!-- RevealJS JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
-
-    <!-- Initialize RevealJS -->
+    
     <script>
         Reveal.initialize({
-            // Display settings
-            width: 1280,
-            height: 720,
-            margin: 0.04,
-            
-            // Navigation
-            controls: true,
-            progress: true,
-            center: true,
             hash: true,
-            
-            // Transitions
             transition: 'slide',
             transitionSpeed: 'default',
+            slideNumber: true,
+            showSlideNumber: 'all',
             
-            // Plugins
+            // Enable plugins
             plugins: [ 
                 RevealMarkdown, 
                 RevealHighlight, 
@@ -287,10 +388,15 @@ ORDER BY total_volume DESC;
                 RevealMath.KaTeX
             ],
             
-            // Math settings
-            math: {
-                mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
-                config: 'TeX-AMS_HTML-full'
+            // Highlight.js configuration
+            highlight: {
+                highlightOnLoad: true,
+                escapeHTML: false
+            },
+            
+            // Markdown configuration
+            markdown: {
+                smartypants: true
             }
         });
     </script>
