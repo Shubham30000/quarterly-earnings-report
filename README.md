@@ -431,7 +431,7 @@ For questions or issues:
 
 ---
 
-**Last Updated**: December 2024
+**Last Updated**: December 2025
 
 **Version**: 1.0.0
 
