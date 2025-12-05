@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quarterly Earnings Report</title>
+    
+    <!-- RevealJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/night.css">
+    
+    <!-- Code highlighting theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css">
+    
+    <style>
+        /* Custom styling for financial presentation */
+        .reveal {
+            font-family: 'Arial', sans-serif;
+        }
+        
+        .reveal .email {
+            font-size: 0.8em;
+            color: #42affa;
+            margin-top: 20px;
+        }
+        
+        .reveal .highlight-box {
+            background: rgba(66, 175, 250, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .reveal .metric {
+            font-size: 2em;
+            color: #42affa;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            
+            <!-- Slide 1: Title -->
+            <section>
+                <h1>Quarterly Earnings Report</h1>
+                <h3>Q4 2024 Financial Results</h3>
+                <p class="email">Prepared by: 23f2005282@ds.study.iitm.ac.in</p>
+                <aside class="notes">
+                    Welcome everyone to our Q4 earnings presentation. Today we'll review our financial performance,
+                    key metrics, and strategic initiatives for the upcoming quarter.
+                </aside>
+            </section>
+
+            <!-- Slide 2: Markdown Content -->
+            <section data-markdown>
+                <textarea data-template>
+                    ## Executive Summary
+                    
+                    Our Q4 2024 performance highlights:
+                    
+                    - **Revenue Growth**: 23% year-over-year
+                    - **Operating Margin**: Improved by 5.2%
+                    - **Customer Acquisition**: 15,000 new accounts
+                    - **Digital Transformation**: 85% completion
+                    
+                    ---
+                    
+                    ### Market Position
+                    
+                    We continue to strengthen our market presence through:
+                    
+                    1. Enhanced digital banking services
+                    2. Strategic partnerships
+                    3. Risk management optimization
+                </textarea>
+                <aside class="notes">
+                    This slide shows our key achievements. Notice the strong revenue growth and improved margins.
+                    Be ready to discuss the digital transformation initiatives in detail.
+                </aside>
+            </section>
+
+            <!-- Slide 3: Animated Financial Metrics -->
+            <section>
+                <h2>Key Financial Metrics</h2>
+                <div class="highlight-box">
+                    <p class="fragment fade-up">
+                        <strong>Total Revenue:</strong> 
+                        <span class="metric">$1.2B</span>
+                    </p>
+                    <p class="fragment fade-up">
+                        <strong>Net Profit:</strong> 
+                        <span class="metric">$180M</span>
+                    </p>
+                    <p class="fragment fade-up">
+                        <strong>Assets Under Management:</strong> 
+                        <span class="metric">$45B</span>
+                    </p>
+                    <p class="fragment fade-up">
+                        <strong>Return on Equity:</strong> 
+                        <span class="metric">18.5%</span>
+                    </p>
+                </div>
+                <aside class="notes">
+                    Walk through each metric as it appears. Emphasize the strong ROE figure and compare it
+                    to industry benchmarks of around 15%.
+                </aside>
+            </section>
+
+            <!-- Slide 4: Code Sample - Risk Analysis Algorithm -->
+            <section>
+                <h2>Risk Analysis Implementation</h2>
+                <p>Our proprietary risk scoring algorithm:</p>
+                <pre><code class="python" data-line-numbers="1-2|4-6|8-10|12-14">
+import pandas as pd
+import numpy as np
+
+def calculate_risk_score(portfolio_data):
+    """Calculate comprehensive risk score for portfolio"""
+    weights = {'volatility': 0.4, 'correlation': 0.3, 'liquidity': 0.3}
+    
+    volatility_score = np.std(portfolio_data['returns']) * 100
+    correlation_risk = portfolio_data['correlation_matrix'].mean()
+    liquidity_score = portfolio_data['avg_volume'] / portfolio_data['total_volume']
+    
+    risk_score = (weights['volatility'] * volatility_score + 
+                  weights['correlation'] * correlation_risk + 
+                  weights['liquidity'] * liquidity_score)
+    
+    return risk_score
+                </code></pre>
+                <aside class="notes">
+                    This is our core risk assessment algorithm. Highlight the three components:
+                    volatility, correlation, and liquidity. Each is weighted based on historical performance.
+                </aside>
+            </section>
+
+            <!-- Slide 5: Financial Formulas -->
+            <section>
+                <h2>Portfolio Performance Metrics</h2>
+                <p>Sharpe Ratio calculation for risk-adjusted returns:</p>
+                <div class="fragment">
+                    \[S = \frac{R_p - R_f}{\sigma_p}\]
+                </div>
+                <p class="fragment">Where:</p>
+                <ul class="fragment">
+                    <li>\(R_p\) = Portfolio return</li>
+                    <li>\(R_f\) = Risk-free rate</li>
+                    <li>\(\sigma_p\) = Portfolio standard deviation</li>
+                </ul>
+                <div class="fragment" style="margin-top: 30px;">
+                    <p><strong>Our Q4 Sharpe Ratio: 1.85</strong></p>
+                    <p style="font-size: 0.8em;">(Industry average: 1.2)</p>
+                </div>
+                <aside class="notes">
+                    The Sharpe Ratio measures risk-adjusted returns. Our ratio of 1.85 significantly
+                    exceeds the industry average, indicating superior risk management.
+                </aside>
+            </section>
+
+            <!-- Slide 6: More Financial Formulas -->
+            <section>
+                <h2>Capital Asset Pricing Model</h2>
+                <p>Expected return calculation:</p>
+                <div class="fragment">
+                    \[E(R_i) = R_f + \beta_i(E(R_m) - R_f)\]
+                </div>
+                <div class="fragment" style="margin-top: 30px;">
+                    <p>Value at Risk (VaR) at 95% confidence:</p>
+                    \[VaR_{95} = \mu - 1.645\sigma\]
+                </div>
+                <p class="fragment" style="margin-top: 20px; font-size: 0.9em;">
+                    These models guide our investment strategy and risk parameters
+                </p>
+                <aside class="notes">
+                    CAPM helps us determine expected returns. Our VaR model ensures we maintain
+                    appropriate risk levels across all portfolios.
+                </aside>
+            </section>
+
+            <!-- Slide 7: SQL Query Example -->
+            <section>
+                <h2>Data Analytics Pipeline</h2>
+                <p>Transaction analysis query:</p>
+                <pre><code class="sql" data-line-numbers="1-3|5-7|9-11">
+SELECT 
+    customer_segment,
+    COUNT(*) as transaction_count,
+    
+    AVG(transaction_amount) as avg_amount,
+    SUM(transaction_amount) as total_volume,
+    STDDEV(transaction_amount) as volatility
+    
+FROM transactions
+WHERE transaction_date >= '2024-10-01'
+  AND transaction_date <= '2024-12-31'
+  
+GROUP BY customer_segment
+ORDER BY total_volume DESC;
+                </code></pre>
+                <aside class="notes">
+                    This query powers our customer analytics dashboard. We segment by customer type
+                    and analyze transaction patterns to identify growth opportunities.
+                </aside>
+            </section>
+
+            <!-- Slide 8: Strategic Initiatives -->
+            <section>
+                <h2>Q1 2025 Strategic Priorities</h2>
+                <ul>
+                    <li class="fragment fade-right">Expand AI-driven advisory services</li>
+                    <li class="fragment fade-right">Launch mobile-first investment platform</li>
+                    <li class="fragment fade-right">Strengthen cybersecurity infrastructure</li>
+                    <li class="fragment fade-right">Enter emerging markets in Southeast Asia</li>
+                    <li class="fragment fade-right">Achieve carbon-neutral operations</li>
+                </ul>
+                <aside class="notes">
+                    These five priorities will drive our growth in 2025. The AI advisory service
+                    is particularly exciting and should launch in Q1. Be prepared for questions
+                    about the Southeast Asia expansion timeline.
+                </aside>
+            </section>
+
+            <!-- Slide 9: Closing -->
+            <section>
+                <h2>Thank You</h2>
+                <h3>Questions & Discussion</h3>
+                <p style="margin-top: 50px;">Contact Information:</p>
+                <p class="email">23f2005282@ds.study.iitm.ac.in</p>
+                <p style="font-size: 0.8em; margin-top: 30px;">
+                    Press 'S' for speaker notes | Press 'O' for overview | Press 'F' for fullscreen
+                </p>
+                <aside class="notes">
+                    Open the floor for questions. Key topics to be ready for:
+                    - Southeast Asia expansion costs and timeline
+                    - AI advisory service differentiation
+                    - Risk management during market volatility
+                    - Customer acquisition cost trends
+                </aside>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- RevealJS Core -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    
+    <!-- Plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
+
+    <!-- Initialize RevealJS -->
+    <script>
+        Reveal.initialize({
+            // Display settings
+            width: 1280,
+            height: 720,
+            margin: 0.04,
+            
+            // Navigation
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+            
+            // Transitions
+            transition: 'slide',
+            transitionSpeed: 'default',
+            
+            // Plugins
+            plugins: [ 
+                RevealMarkdown, 
+                RevealHighlight, 
+                RevealNotes,
+                RevealMath.KaTeX
+            ],
+            
+            // Math settings
+            math: {
+                mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+                config: 'TeX-AMS_HTML-full'
+            }
+        });
+    </script>
+</body>
+</html>
