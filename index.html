@@ -147,6 +147,21 @@
                     Navigate using arrow keys. Press S to see these speaker notes.
                 </aside>
             </section>
+
+            <!-- Slide 1.5: Simple Fragment Demo -->
+            <section>
+                <h2>🔹 Fragment Animation Demo</h2>
+                <p>These points use <code>class="fragment"</code> with no extra classes.</p>
+                <ul>
+                    <li class="fragment">First item appears</li>
+                    <li class="fragment">Then second item</li>
+                    <li class="fragment">Then third item</li>
+                </ul>
+                <aside class="notes">
+                    This slide is here just to clearly demonstrate RevealJS fragments.
+                    Each bullet appears one by one when pressing the next key.
+                </aside>
+            </section>
             
             <!-- Slide 2: Markdown Slide - Executive Summary -->
             <section data-markdown>
@@ -164,17 +179,17 @@
                     
                     ### Strategic Focus Areas
                     
-                    1. Digital transformation initiatives
-                    2. Operational efficiency improvements
-                    3. Market expansion in emerging regions
-                    4. Product innovation pipeline
+                    1. Digital transformation initiatives  
+                    2. Operational efficiency improvements  
+                    3. Market expansion in emerging regions  
+                    4. Product innovation pipeline  
                     
                     *Email: 23f2005282@ds.study.iitm.ac.in*
                 </textarea>
                 
                 <aside class="notes">
                     This markdown slide demonstrates the use of markdown formatting.
-                    Notice the headers, bullet points, numbered lists, and text formatting.
+                    Notice the headers, bullet points, numbered lists, and emphasis.
                     Our Q4 performance exceeded expectations across all key metrics.
                 </aside>
             </section>
@@ -207,8 +222,7 @@
                 
                 <aside class="notes">
                     This slide uses animated fragments - each metric card appears one by one.
-                    Notice how the fade-up animation creates a smooth reveal effect.
-                    All metrics show strong growth compared to last year.
+                    Notice the fade-up animation and how it emphasizes each metric.
                 </aside>
             </section>
             
@@ -236,9 +250,9 @@ print(f"Sharpe Ratio: {sharpe_ratio:.2f}")
                 <aside class="notes">
                     This slide demonstrates code syntax highlighting with Python.
                     The data-line-numbers attribute creates step-by-step highlighting.
-                    Lines 1-3: Import necessary libraries
-                    Lines 5-7: Load and calculate growth rates
-                    Lines 9-11: Calculate performance metrics
+                    Lines 1-3: Import libraries.
+                    Lines 5-7: Load data and compute growth.
+                    Lines 9-11: Calculate key risk-adjusted metrics.
                 </aside>
             </section>
             
@@ -259,9 +273,8 @@ print(f"Sharpe Ratio: {sharpe_ratio:.2f}")
                 </div>
                 
                 <aside class="notes">
-                    This slide displays a mathematical equation using LaTeX/MathJax.
+                    This slide displays a mathematical equation using LaTeX.
                     The Sharpe Ratio measures risk-adjusted returns.
-                    Our current Sharpe Ratio is 1.85, indicating strong performance.
                 </aside>
             </section>
             
@@ -282,9 +295,8 @@ print(f"Sharpe Ratio: {sharpe_ratio:.2f}")
                 </div>
                 
                 <aside class="notes">
-                    This slide shows multiple financial formulas.
-                    CAPM helps us determine expected returns based on market risk.
-                    VaR provides our maximum expected loss at a given confidence level.
+                    CAPM helps determine expected return based on beta.
+                    VaR provides a measure of downside risk at a confidence level.
                 </aside>
             </section>
             
@@ -306,9 +318,8 @@ ORDER BY total_revenue DESC;
 </code></pre>
                 
                 <aside class="notes">
-                    This slide demonstrates SQL syntax highlighting.
-                    The query analyzes customer revenue by segment for Q4.
-                    Step-by-step highlighting shows the query structure.
+                    This query analyzes revenue contribution by customer segment.
+                    Highlight how the GROUP BY and ORDER BY help build dashboards.
                 </aside>
             </section>
             
@@ -318,26 +329,25 @@ ORDER BY total_revenue DESC;
                 <ul class="strategic-list">
                     <li class="fragment fade-right">
                         <strong>Digital Innovation</strong><br>
-                        Invest $15M in AI and machine learning capabilities
+                        Invest $15M in AI and machine learning capabilities.
                     </li>
                     <li class="fragment fade-right">
                         <strong>Market Expansion</strong><br>
-                        Enter 5 new international markets
+                        Enter 5 new international markets.
                     </li>
                     <li class="fragment fade-right">
                         <strong>Customer Experience</strong><br>
-                        Launch new mobile app with enhanced features
+                        Launch new mobile app with enhanced features.
                     </li>
                     <li class="fragment fade-right">
                         <strong>Operational Efficiency</strong><br>
-                        Reduce operating costs by 12% through automation
+                        Reduce operating costs by 12% through automation.
                     </li>
                 </ul>
                 
                 <aside class="notes">
-                    This slide uses fade-right animations for each strategic priority.
-                    Each priority appears from the right side sequentially.
-                    These initiatives are designed to drive growth in 2025.
+                    Each strategic priority appears via fragment animation.
+                    Emphasize how these priorities support long-term growth.
                 </aside>
             </section>
             
@@ -356,9 +366,8 @@ ORDER BY total_revenue DESC;
                 
                 <aside class="notes">
                     Thank you for reviewing our Q4 earnings report.
-                    Contact: 23f2005282@ds.study.iitm.ac.in
-                    We're happy to answer any questions about our financial performance.
-                    Our outlook for 2025 remains strong with continued growth expected.
+                    Contact: 23f2005282@ds.study.iitm.ac.in.
+                    Be ready to answer questions on growth, risk, and strategy.
                 </aside>
             </section>
             
@@ -380,7 +389,6 @@ ORDER BY total_revenue DESC;
             slideNumber: true,
             showSlideNumber: 'all',
             
-            // Enable plugins
             plugins: [ 
                 RevealMarkdown, 
                 RevealHighlight, 
@@ -388,13 +396,11 @@ ORDER BY total_revenue DESC;
                 RevealMath.KaTeX
             ],
             
-            // Highlight.js configuration
             highlight: {
                 highlightOnLoad: true,
                 escapeHTML: false
             },
             
-            // Markdown configuration
             markdown: {
                 smartypants: true
             }
